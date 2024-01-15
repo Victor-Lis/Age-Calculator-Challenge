@@ -1,0 +1,190 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    width: none;
+}
+
+body{
+    width: 100%;
+    height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.box{
+    min-width: 270px;
+    width: 40%;
+    padding: 30px 5px;
+    border-radius: 10px 10px 100px 10px;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > .inputs{
+        /* background-color: red; */
+        display: flex;
+
+        > .input-box{
+
+            > p{
+                width: 37.5%;
+                color: hsl(0, 1%, 44%);
+                font-size: .6rem;
+                margin-bottom: 2.5px;
+
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+            }
+            > input{
+
+                border: .5px solid hsl(0, 0%, 86%);
+                border-radius: 2.5px;
+
+                font-weight: 700;
+
+                /* letter-spacing: .5px; */
+            }
+
+            > p:last-of-type{
+                width: 100%;
+                letter-spacing: unset;
+                font-size: .6rem;
+                margin: 5px 0 0 5px;
+                color: hsl(0, 100%, 67%)
+            }
+        }
+    }
+
+    > .submit-row{
+        width: 90%;
+        height: 1px;
+        background-color: hsl(0, 0%, 86%);
+
+        display: flex;
+        align-items: center;
+
+        > img{
+            border-radius: 100%;
+            width: 20px;
+            padding: 10px;
+            background-color: hsl(259, 100%, 65%);
+            &:hover{
+                cursor: pointer;
+                transition: .25s;
+                background-color: #000;
+            }
+        }
+    }
+
+    > .result{
+        width: 90%;
+        > h1{
+            font-weight: 900;
+            text-align: left;
+            width: 100%;
+            > strong{
+                font-size: 2.5rem;
+                font-weight: 900;
+                color: hsl(259, 100%, 65%);
+            }
+        }
+    }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px){
+    .inputs{
+
+        width: 100%;
+        justify-content: center;
+
+        > .input-box{
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            > input{
+                padding: 7px;
+                width: 37.5%;
+                min-width: 50px;
+                font-size: .9rem;
+            }
+
+            > p{
+                width: 100%;
+            }
+        }
+    }
+
+    .submit-row{
+
+        justify-content: center;
+        margin: 40px 0;
+
+    }
+
+}
+
+@media (min-width: 600px){
+    .inputs{
+
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+
+        /* background-color: red; */
+
+        > .input-box{
+
+            width: 22.5%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            > input{
+                padding: 10px;
+                width: 80%;
+                font-size: 1.1rem;
+            }
+
+            > p{
+                width: 100%;
+            }
+        }
+
+        > .input-box:nth-child(2), .input-box:nth-child(3){
+            margin-left: 7.5%;
+        }
+    }
+
+    .submit-row{
+
+        justify-content: flex-end;
+        margin: 25px 0;
+
+    }
+}
