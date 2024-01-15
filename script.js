@@ -34,8 +34,8 @@ function calcularIdade() {
         yearError.innerText = "Field Required"
         return
     }
-    console.log(parseInt(inputYear.value) < 1)
-    if(!parseInt(inputYear.value) || parseInt(inputYear.value) < 1000){
+
+    if(!parseInt(inputYear.value) || parseInt(inputYear.value) < 1000 || parseInt(inputYear.value) > new Date().getFullYear()){
         yearError.innerText = "Invalid num"
         return
     }
