@@ -37,4 +37,4 @@ Veja o [site](https://age-calculator-by-dev-victor-lis.netlify.app/)!
 
 ## Autores
 
-[@Victor-Lis]('https://github.com/Victor-Lis')
+[@Victor-Lis](https://github.com/Victor-Lis)
