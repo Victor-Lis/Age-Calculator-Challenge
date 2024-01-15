@@ -17,7 +17,7 @@ function calcularIdade() {
         return
     }
     if(!parseInt(inputDay.value) || parseInt(inputDay.value) < 1){
-        dayError.innerText = "Isn't a valid num"
+        dayError.innerText = "Invalid num"
         return
     }
 
@@ -26,7 +26,7 @@ function calcularIdade() {
         return
     }
     if(!parseInt(inputMonth.value) || parseInt(inputMonth.value) < 1){
-        monthError.innerText = "Isn't a valid num"
+        monthError.innerText = "Invalid num"
         return
     }
 
@@ -36,7 +36,7 @@ function calcularIdade() {
     }
     console.log(parseInt(inputYear.value) < 1)
     if(!parseInt(inputYear.value) || parseInt(inputYear.value) < 1000){
-        yearError.innerText = "Isn't a valid num"
+        yearError.innerText = "Invalid num"
         return
     }
 
